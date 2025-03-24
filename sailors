@@ -118,7 +118,6 @@ BEGIN
 	END IF;
 END;//
 DELIMITER ;
-
-
 delete from Boat where bid=103;
-ERROR 1644 (45000): CANNOT DELETE. BOAT HAS ACTIVE RESERVATIONS.
+
+ERROR 1644 (45000): Boat is reserved and hence cannot be deleted
